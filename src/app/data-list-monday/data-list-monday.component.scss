@@ -1,0 +1,58 @@
+.noRadius{
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+.printTask{
+  position: relative;
+  .mat-checkbox{ width: 10%;}
+  .mat-card-subtitle{
+    width: 70%;
+    display: inline-block;
+    text-align: left;
+  }
+  .mat-icon{
+    width: 10%;
+    color: rgb(144, 144, 144);
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: rgb(27, 27, 27) !important;
+  }
+  .popUp{
+    background: #484f58;
+    color: rgb(175, 175, 175);
+    width: 100px;
+    text-align: left;
+    padding: 10px 0 0 10px;
+    position: absolute;
+    right: 42px;
+    z-index: 999;
+    .pinText{
+      cursor: pointer;
+      margin-bottom: 5px;
+      .mat-icon{ font-size: 10px;}
+      .mat-card-title{
+        font-size: 10px;
+        display: inline-block;
+        margin-left: 5px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.searchBar{
+  background: #fff;
+  padding: 8px 15px;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  width: 85%;
+  position: relative;
+  .mat-icon{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+  }
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-underline { display: none;}

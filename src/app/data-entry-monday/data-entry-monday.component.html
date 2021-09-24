@@ -1,0 +1,19 @@
+<mat-card class="noRadius">
+  <!-- text display part -->
+  <mat-card-subtitle>Tuesday</mat-card-subtitle>   
+
+  <!-- area to input your task -->
+  <mat-form-field class="inputTask" floatLabel="never">
+    <mat-icon>subject</mat-icon>
+    <mat-label class="label">Add a task...</mat-label>
+    <input matInput type="text" #task (keydown.enter)="getValue(task.value)" (keyup)="searchFn(task.value)" (keydown.enter)="toClearInput(task.value=' ')">
+  </mat-form-field>   
+  
+  <!-- area to display pin task -->
+  <div class="pinTask" *ngFor ="let items of pinEntries">
+    <mat-icon style="color: #d5668e;">push_pin</mat-icon> 
+    <mat-checkbox></mat-checkbox>
+    <mat-card-subtitle class="subTwo">{{items}}</mat-card-subtitle>
+    <mat-icon>more_horiz</mat-icon>
+  </div>
+</mat-card>

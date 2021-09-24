@@ -1,0 +1,58 @@
+.noRadius{
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid;
+  padding: 16px 0;
+
+  .mat-card-subtitle{
+    font-size: 2em;
+    line-height: 3;
+  }
+  .inputTask{
+    background: #343a3f;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0 1em;
+    color: #5b5b5b;
+    border: 1px solid #2b2b2b;
+  
+    .label{
+      padding-left: 2em;
+      color: #5b5b5b;
+    }
+   
+  }
+
+  div{
+    width: 20%;
+    margin-top: 1em;
+
+    button{
+      background: rgb(92, 91, 91);
+      color: #fff;
+    }
+  }
+  
+  .pinTask{
+    font-size: 7px;
+    color: #fff;
+    margin: 1em auto;
+    width: 100%;
+    .mat-checkbox{ width: 8%;}
+    .mat-card-subtitle{
+      width: 76%;
+      display: inline-block;
+      text-align: left;
+    }
+    .mat-icon{
+      width: 8%;
+      color: rgb(144, 144, 144);
+      vertical-align: middle;
+      cursor: pointer;
+    }
+  }
+}
+

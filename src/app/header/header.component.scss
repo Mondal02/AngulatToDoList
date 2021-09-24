@@ -1,0 +1,38 @@
+.mat-toolbar{
+  text-align: center;
+  background: none;
+
+  div{
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(128, 128, 128);
+    // border-bottom: 0.7px solid #2c2c2c;
+    display: inline-block;
+
+    .active{
+      color: #fff;
+      border-bottom: 2px solid #e65c8b;
+      border-radius: 0;
+    }
+  }
+
+  .searchBar{
+    background: #fff;
+    border-radius: 3px;
+    border: 0;
+    margin-bottom: 1em;
+    position: relative;
+    color: #000;
+    font-size: 0.8em;
+    padding: 0 0.7em;
+    
+    .mat-icon{
+      position: absolute;
+      right: 10px;
+      bottom: 5px;
+    }
+  }
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-underline {
+    display: none;
+  }
+}

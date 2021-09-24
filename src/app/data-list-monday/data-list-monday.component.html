@@ -1,0 +1,35 @@
+<mat-card class="noRadius">
+  <!-- <div *ngIf="!isfiltering"> -->
+    <div class="printTask" *ngFor="let items of displayData; let i = index">
+      <mat-checkbox></mat-checkbox>
+      <mat-card-subtitle class="subTwo">{{items}}
+        <input matInput type="text" placeholder="add a memo" style="display: none; background: #3c4249;;" #memoInput (keydown.enter)="storeMemo(memoInput.value)">
+      </mat-card-subtitle>      
+      <mat-icon (click)="showPopup(elem)">more_horiz
+        <div style="display: none;" #elem>
+          <mat-card class="popUp" >
+            <div class="pinText" (click)="showPinEntry(items)">
+              <mat-icon>push_pin</mat-icon> 
+              <mat-card-title>Pin on the top</mat-card-title>
+            </div>
+            <div class="pinText" (click) = "showMemoInput(memoInput)">
+              <mat-icon>description</mat-icon>
+              <mat-card-title>Add a memo</mat-card-title>
+            </div>
+            <div class="pinText" (click)="deleteEntry(i)">
+              <mat-icon>delete</mat-icon>
+              <mat-card-title>Delete</mat-card-title>
+            </div>
+          </mat-card>
+        </div>
+      </mat-icon>
+    </div> 
+  <!-- </div> -->
+  <!-- <div *ngIf="isfiltering">
+    <div class="printTask" *ngFor="let items of filterVal">
+      <mat-checkbox></mat-checkbox>
+      <mat-card-subtitle class="subTwo">{{items}}</mat-card-subtitle>
+      <mat-icon>more_horiz</mat-icon>
+    </div>
+  </div> -->  
+</mat-card>
